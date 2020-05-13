@@ -1,0 +1,7 @@
+venv
+*.db
+__pycache_
+.env
+.flaskenv
+*.pyc
+*.pyo_
