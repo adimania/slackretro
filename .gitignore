@@ -1,5 +1,6 @@
 venv
 *.db
+app.db
 __pycache_
 .env
 .flaskenv

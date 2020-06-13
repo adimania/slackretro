@@ -1,6 +1,6 @@
 from app import app, db
-from app.models import Channel 
+from app.models import Retro
 
 @app.shell_context_processor
 def make_shell_context():
-    return {'db':db, 'Channel': Channel}
+    return {'db':db, 'Retro': Retro}

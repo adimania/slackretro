@@ -1,10 +1,10 @@
 from app import db
 from datetime import datetime, time
 
-class Channel(db.Model):
+class Retro(db.Model):
     id = db.Column(db.Integer, primary_key = True) #, autoincrement=True)
-    userid = db.Column(db.String(80), index=True)
-    channel = db.Column(db.String(80), index=True)
+    userid = db.Column(db.String(40), index=True)
+    channel = db.Column(db.String(40), index=True)
     message = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default = datetime.utcnow)
     nature = db.Column(db.Boolean, default=True)
